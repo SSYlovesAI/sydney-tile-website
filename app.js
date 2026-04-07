@@ -4,11 +4,11 @@ const DB_VERSION = 1;
 const STORE_NAME = "gallery";
 
 const defaultProfile = {
-  headline: "Sydney tile installation for homes, renovations and commercial spaces",
+  headline: "Jack Wang Tiling Services for homes, renovations and commercial spaces in Sydney",
   intro:
-    "我们专注于悉尼本地商业与住宅贴瓷砖服务，适合浴室翻新、厨房升级、零售店铺装修、自住房和投资房施工。",
-  phone: "+61 4 12 345 678",
-  email: "hello@sydneytilecraft.com",
+    "Jack Wang Tiling Services 专注于悉尼本地商业与住宅贴瓷砖服务，适合浴室翻新、厨房升级、零售店铺装修、自住房和投资房施工。",
+  phone: "0407 543 531",
+  email: "shaolinwang81@gmail.com",
   serviceArea: "Sydney CBD, Inner West, North Shore, Eastern Suburbs, Parramatta",
   customerFit: [
     "商业装修团队和零售店主",
