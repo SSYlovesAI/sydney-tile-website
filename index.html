@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jack Wang Tiling Services | Sydney Tiling Services</title>
     <meta
       name="description"
-      content="Jack Wang Tiling Services 提供悉尼本地商业与住宅贴瓷砖、浴室翻新、厨房墙地砖、户外露台和防水配套服务。"
+      content="Jack Wang Tiling Services provides residential and commercial tiling across Sydney, including bathrooms, kitchens, outdoor areas and renovation work."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -14,133 +14,71 @@
     <div class="page-shell">
       <header class="topbar">
         <div class="brand-block">
-          <p class="eyebrow">Sydney, Australia</p>
+          <p id="brandEyebrow" class="eyebrow">Sydney, Australia</p>
           <a class="brand" href="#home">Jack Wang Tiling Services</a>
         </div>
         <nav class="nav">
-          <a href="#services">服务</a>
-          <a href="#projects">项目类型</a>
-          <a href="#gallery">案例</a>
-          <a href="#contact">联系</a>
-          <button id="ownerModeButton" class="ghost-btn" type="button">Owner Panel</button>
+          <div class="nav-links">
+            <a id="navServices" href="#services">Services</a>
+            <a id="navProjects" href="#projects">Project Types</a>
+            <a id="navGallery" href="#gallery">Gallery</a>
+            <a id="navContact" href="#contact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <div class="language-switch" aria-label="Language switcher">
+              <button id="langEnButton" class="lang-button" type="button">EN</button>
+              <button id="langZhButton" class="lang-button" type="button">中文</button>
+            </div>
+            <button id="ownerModeButton" class="ghost-btn" type="button">Owner Panel</button>
+          </div>
         </nav>
       </header>
 
       <main>
         <section id="home" class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Trusted Tiling Contractor in Sydney</p>
-            <h1>承接悉尼商业与住宅贴瓷砖工程</h1>
-            <p class="hero-text">
-              从咖啡馆、零售店、办公室，到自住房、投资房、浴室翻新和户外露台，我们提供整洁细致的瓷砖铺贴、修补翻新和收边工艺服务。
+            <p id="heroEyebrow" class="eyebrow">Trusted Tiling Contractor in Sydney</p>
+            <h1 id="heroTitle">Commercial and residential tiling across Sydney</h1>
+            <p id="heroText" class="hero-text">
+              We handle bathrooms, kitchens, retail spaces, offices, outdoor areas and renovation jobs with clean finishes and reliable workmanship.
             </p>
             <div class="hero-actions">
-              <a class="primary-btn" href="#contact">获取报价</a>
-              <a class="secondary-btn" href="#gallery">查看案例</a>
+              <a id="heroPrimaryCta" class="primary-btn" href="#contact">Request a quote</a>
+              <a id="heroSecondaryCta" class="secondary-btn" href="#gallery">View gallery</a>
             </div>
-            <div class="hero-stats">
-              <div class="stat-card">
-                <strong>Commercial</strong>
-                <span>商铺、办公室、展示空间</span>
-              </div>
-              <div class="stat-card">
-                <strong>Residential</strong>
-                <span>浴室、厨房、地面、墙面</span>
-              </div>
-              <div class="stat-card">
-                <strong>Sydney Wide</strong>
-                <span>悉尼城区及周边可上门</span>
-              </div>
-            </div>
+            <div id="heroStats" class="hero-stats"></div>
           </div>
 
           <div class="hero-showcase">
             <div class="showcase-card highlight-card">
-              <p class="card-label">Why Clients Call Us</p>
-              <ul class="bullet-list">
-                <li>精准排版，减少空鼓和浪费</li>
-                <li>商业场地与住宅工程都可承接</li>
-                <li>支持新铺、翻新、局部修补</li>
-                <li>注重收边、坡度、防水配合</li>
-              </ul>
+              <p id="highlightLabel" class="card-label">Why clients call us</p>
+              <ul id="highlightList" class="bullet-list"></ul>
             </div>
-            <div class="showcase-grid">
-              <article class="mini-card warm">
-                <span>Bathroom Renovation</span>
-                <strong>浴室墙地砖</strong>
-              </article>
-              <article class="mini-card clay">
-                <span>Kitchen Splashback</span>
-                <strong>厨房挡水墙</strong>
-              </article>
-              <article class="mini-card dark">
-                <span>Retail Fit-out</span>
-                <strong>商铺地砖施工</strong>
-              </article>
-              <article class="mini-card sand">
-                <span>Outdoor Area</span>
-                <strong>阳台与露台贴砖</strong>
-              </article>
-            </div>
+            <div id="showcaseGrid" class="showcase-grid"></div>
           </div>
         </section>
 
         <section id="services" class="section">
           <div class="section-heading">
-            <p class="eyebrow">Services</p>
-            <h2>贴瓷砖服务范围</h2>
-            <p>
-              面向悉尼本地业主、建筑团队、室内装修承包商和商业空间客户，覆盖从准备到收边的常见贴砖需求。
+            <p id="servicesEyebrow" class="eyebrow">Services</p>
+            <h2 id="servicesTitle">What we can tile</h2>
+            <p id="servicesText">
+              We work with homeowners, builders, renovators and commercial clients across Sydney for new tiling, upgrades and repair work.
             </p>
           </div>
-          <div class="service-grid">
-            <article class="service-card">
-              <h3>住宅贴砖</h3>
-              <p>浴室、厨房、客厅、玄关、laundry、阳台等住宅区域的墙地砖施工与更新。</p>
-            </article>
-            <article class="service-card">
-              <h3>商业贴砖</h3>
-              <p>餐饮店、零售店、办公室、展示厅、出租房升级等商业项目的批量铺贴与工期配合。</p>
-            </article>
-            <article class="service-card">
-              <h3>翻新修补</h3>
-              <p>旧砖拆换、局部补砖、破损修复、重新勾缝、硅胶收边和旧空间焕新。</p>
-            </article>
-            <article class="service-card">
-              <h3>Outdoor & Feature Tile</h3>
-              <p>户外防滑砖、露台台阶、特色背景墙、人字铺、六角砖和大板砖等特殊工艺。</p>
-            </article>
-          </div>
+          <div id="serviceGrid" class="service-grid"></div>
         </section>
 
         <section id="projects" class="section alt-section">
           <div class="section-heading">
-            <p class="eyebrow">Project Types</p>
-            <h2>可承接的项目类型</h2>
+            <p id="projectsEyebrow" class="eyebrow">Project Types</p>
+            <h2 id="projectsTitle">Jobs we take on</h2>
           </div>
           <div class="project-layout">
-            <div class="project-list">
-              <article class="project-card">
-                <h3>Commercial Fit-outs</h3>
-                <p>适合商场店铺、咖啡馆、办公室翻新，需要配合现场流程、时间节点和整体观感的项目。</p>
-              </article>
-              <article class="project-card">
-                <h3>Private Homes</h3>
-                <p>面向自住房和投资房，包含新房施工、二手房改造、翻新升级和出租屋整修。</p>
-              </article>
-              <article class="project-card">
-                <h3>Builders & Renovators</h3>
-                <p>可与 builder、designer、plumber、waterproofing 团队配合，推进多工种装修项目。</p>
-              </article>
-            </div>
+            <div id="projectList" class="project-list"></div>
             <aside class="quote-card">
-              <p class="card-label">Quick Quote Flow</p>
-              <ol>
-                <li>发送区域、尺寸和现场照片</li>
-                <li>说明是商业还是住宅项目</li>
-                <li>确认材料、颜色和工期要求</li>
-                <li>安排报价与上门沟通</li>
-              </ol>
+              <p id="quoteLabel" class="card-label">Quick quote flow</p>
+              <ol id="quoteList"></ol>
             </aside>
           </div>
         </section>
@@ -148,15 +86,17 @@
         <section id="gallery" class="section">
           <div class="section-heading gallery-heading">
             <div>
-              <p class="eyebrow">Gallery</p>
-              <h2>项目图片与视频案例</h2>
-              <p>
-                这里展示你的施工成果。作为站长，你可以在 Owner Panel 上传图片和视频，页面会自动更新展示。
+              <p id="galleryEyebrow" class="eyebrow">Gallery</p>
+              <h2 id="galleryTitle">Project photos and videos</h2>
+              <p id="galleryText">
+                This section shows real project media. You can also upload more images and videos from the Owner Panel.
               </p>
             </div>
             <div class="gallery-note">
-              <strong>Owner Tips</strong>
-              <span>上传内容保存在当前浏览器中，适合本地演示和后续继续扩展后台。</span>
+              <strong id="galleryNoteTitle">Owner Tips</strong>
+              <span id="galleryNoteText">
+                Content uploaded in the Owner Panel is stored in this browser for local demos and future expansion.
+              </span>
             </div>
           </div>
           <div id="galleryGrid" class="gallery-grid"></div>
@@ -164,55 +104,42 @@
 
         <section class="section testimonial-section">
           <div class="section-heading">
-            <p class="eyebrow">What We Focus On</p>
-            <h2>客户在意的通常是这些</h2>
+            <p id="focusEyebrow" class="eyebrow">What We Focus On</p>
+            <h2 id="focusTitle">What clients usually care about</h2>
           </div>
-          <div class="testimonial-grid">
-            <article class="testimonial-card">
-              <strong>Finish Quality</strong>
-              <p>砖缝、对缝、阴阳角和收边是否干净，决定了空间最终质感。</p>
-            </article>
-            <article class="testimonial-card">
-              <strong>Communication</strong>
-              <p>提前确认工期、区域、材料和细节，能减少返工，也更容易安排现场配合。</p>
-            </article>
-            <article class="testimonial-card">
-              <strong>Reliable Delivery</strong>
-              <p>无论是商业装修还是家庭翻新，都要在约定时间内把工艺和进度一起做好。</p>
-            </article>
-          </div>
+          <div id="testimonialGrid" class="testimonial-grid"></div>
         </section>
 
         <section id="contact" class="section contact-section">
           <div class="contact-copy">
-            <p class="eyebrow">Contact</p>
-            <h2>联系悉尼瓷砖承包服务</h2>
-            <p>
-              你可以把电话、邮箱、服务区域和社交平台放在这里，方便客户直接联系。下面的信息都可以在 Owner Panel 中修改。
+            <p id="contactEyebrow" class="eyebrow">Contact</p>
+            <h2 id="contactTitle">Get in touch for tiling work in Sydney</h2>
+            <p id="contactText">
+              Keep your phone, email and service area here so customers can contact you directly. These details can be updated in the Owner Panel.
             </p>
             <div class="contact-cards">
               <a id="phoneLink" class="contact-card" href="#">
-                <span>电话</span>
+                <span id="phoneLabel">Phone</span>
                 <strong id="phoneText"></strong>
               </a>
               <a id="emailLink" class="contact-card" href="#">
-                <span>邮箱</span>
+                <span id="emailLabel">Email</span>
                 <strong id="emailText"></strong>
               </a>
               <div class="contact-card">
-                <span>服务区域</span>
+                <span id="serviceAreaLabel">Service Area</span>
                 <strong id="serviceAreaText"></strong>
               </div>
             </div>
           </div>
           <div class="contact-panel">
             <div class="contact-panel-card">
-              <p class="card-label">宣传文案</p>
+              <p id="businessIntroLabel" class="card-label">Business Intro</p>
               <h3 id="businessHeadline"></h3>
               <p id="businessIntro"></p>
             </div>
             <div class="contact-panel-card">
-              <p class="card-label">适合客户</p>
+              <p id="bestFitLabel" class="card-label">Best Fit Clients</p>
               <ul id="customerFitList" class="bullet-list compact"></ul>
             </div>
           </div>
@@ -224,57 +151,101 @@
       <form method="dialog" class="owner-card">
         <div class="dialog-head">
           <div>
-            <p class="eyebrow">Owner Panel</p>
-            <h3>管理网站内容</h3>
+            <p id="ownerEyebrow" class="eyebrow">Owner Panel</p>
+            <h3 id="ownerTitle">Manage site content</h3>
           </div>
-          <button class="ghost-btn" value="cancel" type="submit">关闭</button>
+          <button id="ownerCloseButton" class="ghost-btn" value="cancel" type="submit">Close</button>
         </div>
 
         <div class="owner-grid">
           <section class="owner-section">
-            <h4>联系方式</h4>
-            <label class="field">
-              <span>业务标题</span>
-              <input id="headlineInput" maxlength="80" />
-            </label>
-            <label class="field">
-              <span>业务介绍</span>
-              <textarea id="introInput" rows="4" maxlength="240"></textarea>
-            </label>
-            <label class="field">
-              <span>电话</span>
-              <input id="phoneInput" maxlength="32" />
-            </label>
-            <label class="field">
-              <span>邮箱</span>
-              <input id="emailInput" maxlength="60" />
-            </label>
-            <label class="field">
-              <span>服务区域</span>
-              <input id="serviceAreaInput" maxlength="60" />
-            </label>
-            <label class="field">
-              <span>适合客户（每行一条）</span>
-              <textarea id="customerFitInput" rows="4" maxlength="240"></textarea>
-            </label>
-            <button id="saveProfileButton" class="primary-btn" type="button">保存资料</button>
+            <h4 id="ownerContentTitle">Bilingual business content</h4>
+            <p id="ownerContentHint" class="helper-text">
+              Use both language fields to keep the public website fully bilingual.
+            </p>
+
+            <div class="owner-subsection">
+              <h5 id="ownerSharedTitle">Shared contact details</h5>
+              <label class="field">
+                <span id="ownerPhoneLabel">Phone</span>
+                <input id="phoneInput" maxlength="32" />
+              </label>
+              <label class="field">
+                <span id="ownerEmailLabel">Email</span>
+                <input id="emailInput" maxlength="60" />
+              </label>
+            </div>
+
+            <div class="owner-subsection">
+              <h5 id="ownerEnglishTitle">English content</h5>
+              <label class="field">
+                <span id="headlineEnLabel">Business headline (English)</span>
+                <input id="headlineEnInput" maxlength="80" />
+              </label>
+              <label class="field">
+                <span id="introEnLabel">Business intro (English)</span>
+                <textarea id="introEnInput" rows="4" maxlength="240"></textarea>
+              </label>
+              <label class="field">
+                <span id="serviceAreaEnLabel">Service area (English)</span>
+                <input id="serviceAreaEnInput" maxlength="80" />
+              </label>
+              <label class="field">
+                <span id="customerFitEnLabel">Best fit clients (English, one per line)</span>
+                <textarea id="customerFitEnInput" rows="4" maxlength="320"></textarea>
+              </label>
+            </div>
+
+            <div class="owner-subsection">
+              <h5 id="ownerChineseTitle">Chinese content</h5>
+              <label class="field">
+                <span id="headlineZhLabel">业务标题（中文）</span>
+                <input id="headlineZhInput" maxlength="80" />
+              </label>
+              <label class="field">
+                <span id="introZhLabel">业务介绍（中文）</span>
+                <textarea id="introZhInput" rows="4" maxlength="240"></textarea>
+              </label>
+              <label class="field">
+                <span id="serviceAreaZhLabel">服务区域（中文）</span>
+                <input id="serviceAreaZhInput" maxlength="80" />
+              </label>
+              <label class="field">
+                <span id="customerFitZhLabel">适合客户（中文，每行一条）</span>
+                <textarea id="customerFitZhInput" rows="4" maxlength="320"></textarea>
+              </label>
+            </div>
+
+            <button id="saveProfileButton" class="primary-btn" type="button">Save content</button>
           </section>
 
           <section class="owner-section">
-            <h4>上传案例图片 / 视频</h4>
+            <h4 id="uploadSectionTitle">Upload gallery media</h4>
+            <p id="uploadSectionHint" class="helper-text">
+              Add both English and Chinese titles or captions if you want uploaded items to stay bilingual.
+            </p>
+
             <label class="field">
-              <span>案例标题</span>
-              <input id="mediaTitleInput" maxlength="60" placeholder="例如：North Sydney Bathroom" />
+              <span id="mediaTitleEnLabel">Gallery title (English)</span>
+              <input id="mediaTitleEnInput" maxlength="60" placeholder="Example: North Sydney Bathroom" />
             </label>
             <label class="field">
-              <span>案例说明</span>
-              <input id="mediaCaptionInput" maxlength="120" placeholder="例如：大规格浅灰砖，淋浴区重新排版" />
+              <span id="mediaTitleZhLabel">案例标题（中文）</span>
+              <input id="mediaTitleZhInput" maxlength="60" placeholder="例如：北悉尼浴室项目" />
             </label>
             <label class="field">
-              <span>选择图片或视频</span>
+              <span id="mediaCaptionEnLabel">Caption (English)</span>
+              <input id="mediaCaptionEnInput" maxlength="120" placeholder="Example: Large-format grey tiles with refined shower detailing" />
+            </label>
+            <label class="field">
+              <span id="mediaCaptionZhLabel">案例说明（中文）</span>
+              <input id="mediaCaptionZhInput" maxlength="120" placeholder="例如：大规格灰砖，淋浴区细节收边更整洁" />
+            </label>
+            <label class="field">
+              <span id="mediaFileLabel">Choose images or videos</span>
               <input id="mediaFileInput" type="file" accept="image/*,video/*" multiple />
             </label>
-            <button id="uploadMediaButton" class="primary-btn" type="button">上传到案例区</button>
+            <button id="uploadMediaButton" class="primary-btn" type="button">Upload to gallery</button>
             <p id="uploadStatus" class="helper-text"></p>
             <div id="ownerMediaList" class="owner-media-list"></div>
           </section>
